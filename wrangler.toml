@@ -1,0 +1,14 @@
+name = "takip"
+main = "dist/worker.js"
+compatibility_date = "2026-05-28"
+
+[triggers]
+crons = ["* * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "watchline"
+database_id = "da332467-6cb4-4e67-8eb9-dcd763d5c199"
+
+[vars]
+WATCHLINE_MAX_CHECKS_PER_CRON = "25"
